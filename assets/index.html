@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link href="./css/main.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+        </head>
+               <!-- Header -->
+        <header class="header">
+         <!-- Titulo Servidor -->
+<h1 class="header-text">Slowy LoadingScreen v2<span>Presiona ESPACIO para detener la musica</span></h1> 
+        </header>
+
+            <!-- Musica-->
+        <audio id="musica" preload="auto" type="audio/mp3" autoplay>
+        </audio>
+
+    <!-- Video -->
+        <div class="background"></div>
+        <iframe 
+             id="youtubeplayer"
+             class="video"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted;"
+     ></iframe>
+    </div>
+
+
+       <!-- Body -->
+<body class="body">
+       <!-- Centro Izquierda / Redes Sociales -->
+    <div class="body-izquierda">
+        <div class="discordIcon">
+            <img id="social1" class="discordPng" onclick="copiarEnlace('https', 'mensaje')">
+            <p id="mensaje" class="mensaje">Enlace copiado</p>   
+        </div>
+
+    <div class="discordIcon">
+        <img id="social2" class="instaPng" onclick="copiarEnlace('https', 'mensaje2')">    
+        <p id="mensaje2" class="mensaje">Enlace copiado</p>   
+    </div>
+
+    <div class="discordIcon">
+        <img id="social3" class="paypalPng"  onclick="copiarEnlace('https', 'mensaje3')">  
+        <p id="mensaje3" class="mensaje">Enlace copiado</p>   
+    </div>
+</div>
+    </div>
+
+       <!-- Centro Derecha / Soporte o Staff-->
+    <div class="body-derecha">
+        <img id="staff1" alt="2">
+        <h1 class="h1">Slowy</h1> <h1 class="h2">- Owner</h2>
+    </div>
+    <div class="body-derecha2">
+        <img id="staff2" alt="1">
+        <h1 class="h1">Slowy</h1> <h1 class="h2">- Owner</h2>
+    </div>
+
+    <div class="body-derecha3">
+        <img id="staff3" alt="1">
+        <h1 class="h1">Slowy</h1> <h1 class="h2">- Owner</h2>
+    </div>
+</body>
+
+       <!-- Footer / Abajo -->
+
+
+       <!-- LoadingBar -->
+       <div class="bottom">
+        <div id="gradient">
+        </div>
+
+        <div class="letni">
+        <p id="message">Cargando...</p>
+        <p id="percent"><span id="progress-bar-value">0</span>%</p>
+    
+    <progress id="progress" min="0" max="100" value="0"></progress>
+
+       <!-- Scripts -->
+<script src="./js/loadbar.js"></script>
+<script src="./js/main.js"></script>
+<script src="../config.js"></script>
+</html>
+
+
+

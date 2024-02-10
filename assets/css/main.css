@@ -1,0 +1,310 @@
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #33333300;
+    color: white;
+    padding: 50px 20px;
+}
+
+.header-text {
+    flex-grow: 1;
+    margin-top: -25px;
+    text-align: center;
+    font-family: Oswald;
+    flex-direction: column;
+  }
+
+  h1 span {
+    display: block; /* Hace que el span se comporte como un bloque, colocándolo en una nueva línea */
+    font-size: 0.4em; /* Reduce el tamaño del subtítulo en relación al h1 */
+    color: #666; /* Color del subtítulo */
+  }
+
+
+/* Body */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+/* Body Izquierda */
+
+.body > .body-izquierda {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(0, 255, 255, 0);
+    gap: 4px;
+    margin-top: 10vw;
+}
+
+.body > .body-izquierda > .discordIcon {
+    align-items: center;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    cursor: pointer;
+    width: 300px;
+    height: 56px;
+
+}
+
+.discordIcon img {
+    cursor: pointer;
+    z-index: 1;
+	background: 0.2083vw rgba(255, 255, 255, 0.06);
+    height: 2.85vw;
+    width: 3.05vw;
+
+
+}
+
+.mensaje {
+	font-family: Oswald;
+    display: none;
+	color: rgb(173, 172, 172);
+	font-size: 0.940vw;
+    display: block;
+    position: relative;
+    left: 3.5vw;
+    bottom: 2.9vw;
+    opacity: 0%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Body derecha */
+
+
+.body > .body-derecha {
+    cursor: pointer;
+    z-index: 1;
+	background: 0.2083vw rgba(0, 0, 0, 0.438);
+    height: 3.80vw;
+    width: 21.05vw;
+    border-radius: 20vw;
+    position: absolute;
+    right: 4vw;
+    top: 20vw;
+    display: flex;
+    flex: column;
+}
+
+.body > .body-derecha > img {
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Body derecha 2 */
+
+.body-derecha2 {
+    cursor: pointer;
+    z-index: 1;
+	background: 0.2083vw rgba(0, 0, 0, 0.438);
+    height: 3.80vw;
+    width: 21.05vw;
+    border-radius: 20vw;
+    position: absolute;
+    right: 4vw;
+    top: 25vw;
+    display: flex;
+    flex: column;
+    text-align: center;
+}
+
+.body-derecha2 > img {
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.h1, .h2{
+    font-family: Oswald;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.589);
+    margin-left: 0.5vw;
+    margin-top: 0.8vw;
+}
+
+.h2{
+    font-family: Oswald;
+    color: rgba(213, 48, 228, 0.432);
+    margin-left: 5px;
+}
+
+
+
+/* Body derecha 3 */
+
+.body-derecha3 {
+    cursor: pointer;
+    z-index: 1;
+	background: 0.2083vw rgba(0, 0, 0, 0.438);
+    height: 3.80vw;
+    width: 21.05vw;
+    border-radius: 20vw;
+    position: absolute;
+    right: 4vw;
+    top: 30vw;
+    display: flex;
+    flex: column;
+    text-align: center;
+}
+
+.body-derecha3 > img {
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+
+/* LoadingBar */
+
+
+#enlace {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+
+
+#icono {
+    cursor: auto;
+}
+
+
+/* LoadingBar */
+
+.loadbar
+{
+    width: 100%;
+    background-color: blueviolet;
+    height: 27px;
+    border-color: black;
+    border-radius: 50vw;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+
+    margin-left: 2px;
+    margin-right: 3px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: block;
+    text-align: center;
+}
+
+
+@keyframes loading{
+    0%{
+        height:0;
+    }
+    50%{
+        height:10vh;
+    }
+    100%{
+        height:0;
+    }
+}
+
+#message {
+	display: inline-block;
+	transition: opacity 0.25s;
+    color: white;
+    margin-bottom: 0.5;
+    font-size: 20;
+    font-family: Oswald;
+}
+
+
+#percent {
+	float: right;
+    margin-bottom: 0.5%;
+    font-family: Oswald;
+    font-family: Oswald;
+    font-size: 20;
+    color: white;
+}
+
+#progress[value] {
+	width: 100%;
+	height: 2rem;
+	-webkit-appearance: none;
+}
+#progress[value]::-webkit-progress-bar {
+	background-color: rgba(234, 6, 255, 0.459);
+	border-radius: 2rem;
+    opacity: 30%;
+}
+#progress[value]::-webkit-progress-value {
+    transition: width 0.5s;
+}
+#progress::-webkit-progress-value {
+	background: rgba(234, 6, 255, 0.459);
+	border-radius: 1rem;
+}
+
+.bottom
+{
+    position: absolute;
+    background-color: #9f0cc400;
+    bottom: 30px;
+    left: 85px;
+    width: 90%;
+    height: 15%;
+}
+
+
+/* Video */
+
+.video {
+	width: 110%;
+	height: 110vh;
+	position: fixed;
+	top: -5%;
+	left: -5%;
+	z-index: -12;
+}
+
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -11;
+	width: 100%;
+	height: 100%;
+	opacity: 95%;
+	background: radial-gradient(37.01% 25.67% at -8.05% 41.67%, rgba(242, 90, 255, 0.12) 0%, rgba(90, 255, 156, 0) 100%),
+		radial-gradient(42.37% 24.57% at -10.03% 66.53%, rgba(94, 90, 255, 0.12) 0%, rgba(94, 90, 255, 0) 100%),
+		radial-gradient(44.51% 25.81% at -7.68% 79.26%, rgba(90, 255, 156, 0.12) 0%, rgba(90, 255, 156, 0) 100%),
+		radial-gradient(28.02% 36.36% at 38.65% 0%, rgba(242, 90, 255, 0.12) 0%, rgba(90, 255, 156, 0) 100%),
+		radial-gradient(31.29% 35.35% at 64.32% 0%, rgba(94, 90, 255, 0.12) 0%, rgba(90, 255, 156, 0) 100%),
+		radial-gradient(18.24% 32.33% at 50.86% 0%, rgba(90, 255, 156, 0.12) 0%, rgba(90, 255, 156, 0) 100%),
+		radial-gradient(62.49% 40.7% at 114.51% 46.39%, rgba(153, 238, 115, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
+		radial-gradient(126.27% 80.49% at 115.7% 105.79%, rgba(122, 126, 171, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
+		radial-gradient(96.55% 96.5% at 97.97% 1.25%, rgba(204, 131, 10, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
+		radial-gradient(50% 50% at 50% 50%, rgba(12, 16, 23, 0.8) 0%, rgba(0, 0, 0, 0.7) 0.01%, rgba(0, 0, 0, 0.88) 100%);
+}
