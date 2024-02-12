@@ -19,9 +19,9 @@
   }
 
   h1 span {
-    display: block; /* Hace que el span se comporte como un bloque, colocándolo en una nueva línea */
-    font-size: 0.4em; /* Reduce el tamaño del subtítulo en relación al h1 */
-    color: #666; /* Color del subtítulo */
+    display: block; 
+    font-size: 0.4em; 
+    color: #666; 
   }
 
 
@@ -173,21 +173,6 @@ body {
     display: flex;
     flex-direction: column;
     text-align: end;
-}
-
-
-/* LoadingBar */
-
-
-#enlace {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-  }
-
-
-#icono {
-    cursor: auto;
 }
 
 

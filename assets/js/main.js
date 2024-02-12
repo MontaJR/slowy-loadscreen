@@ -1,3 +1,6 @@
+
+// Social Media / Redes Sociales / No tocar / Don't touch
+
 function copiarEnlace(enlace, mensajeId) {
     var textarea = document.createElement("textarea");
     textarea.value = enlace;
@@ -32,7 +35,7 @@ function copiarEnlace(enlace, mensajeId) {
 
 
 
-// Musica Don't Touch / No tocar /
+// Musica / Music / Don't Touch / No tocar /
   document.addEventListener('keydown', function(event) {
     if (event.code === 'Space') {
       event.preventDefault();
